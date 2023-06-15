@@ -1,0 +1,18 @@
+@import './_mixins'
+@import './_variables'
+
+.container
+    background-color: $bg-primary
+    text-align: center
+    height: 50px
+    @include flex
+
+    p
+        user-select: none
+        color: $text-white
+        font-size: 1rem
+        font-family: 'Fira Code', monospace
+        strong
+
+            color: $text-cream
+            font-family: 'Chakra Petch', sans-serif

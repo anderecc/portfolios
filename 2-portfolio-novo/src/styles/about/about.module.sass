@@ -1,0 +1,27 @@
+@import '../_mixins'
+@import '../_variables'
+
+.title
+    color: $text-white
+
+.about_content
+    p
+        margin: 1rem 0
+        color: $text-primary
+
+.skills_content
+    ul
+        display: flex
+        flex-direction: column
+        gap: .5rem
+        @include desktop
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+        li
+
+            p
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                gap: 1rem
+                color: $text-primary

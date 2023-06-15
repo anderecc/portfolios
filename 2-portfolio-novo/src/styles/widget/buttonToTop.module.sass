@@ -1,0 +1,43 @@
+@import '../_mixins'
+@import '../_variables'
+
+.button
+    position: fixed
+    border: none
+    box-shadow: 2px 2px 5px black
+    bottom: 2%
+    right: 5%
+    width: 40px
+    height: 40px
+    border-radius: 10px
+    background-color: $bg-green
+    font-size: 1.5rem
+    cursor: pointer
+    z-index: 15 !important
+    &:hover
+        i
+            animation: shake 1s infinite linear
+
+@keyframes shake
+    0%
+        transform: rotate(0deg)
+    10%
+        transform: rotate(-3deg)
+    20%
+        transform: rotate(3deg)
+    30%
+        transform: rotate(0deg)
+    40%
+        transform: rotate(4deg)
+    50%
+        transform: rotate(-6deg)
+    60%
+        transform: rotate(0deg)
+    70%
+        transform: rotate(-3deg)
+    80%
+        transform: rotate(3deg)
+    90%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(-8deg)

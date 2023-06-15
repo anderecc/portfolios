@@ -1,0 +1,77 @@
+@import './_variables'
+
+@mixin transition
+    transition: all .3s
+
+@mixin tablet
+    @media ( min-width: 540px )
+        @content
+
+@mixin desktop
+    @media ( min-width: 980px )
+        @content
+
+@mixin button
+    @include transition
+    border: none
+    padding: 5px 10px
+    border-radius: 5px
+    background-color: transparent
+    font-size: 1rem
+    cursor: pointer
+    &:active
+        transform: scale(.96)
+    &:hover
+        box-shadow: inset 5px 5px 50px rgba(0, 0, 0, .4)
+    &:disabled
+        background-color: #424242
+
+@mixin flex
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin flex-items
+    display: flex
+    align-items: center
+
+@mixin flex-content
+    display: flex
+    justify-content: center
+
+@mixin to-flex($align, $content)
+    display: flex
+    align-items: $align
+    justify-content: $content
+
+@mixin input
+    @include transition
+    outline: none
+    border-radius: 5px
+    border: 1px solid $bg-primary
+    font-size: 1rem
+    background-color: transparent
+    padding: 5px 10px
+    &:focus
+        background-color: $dark-transparent
+
+@mixin link
+    @include transition
+    color: $text-link
+    padding: 5px 10px
+    font-size: 1rem
+    font-family: 'Fira Code', monospace
+    position: relative
+    @include flex
+
+    &::after
+        @include transition
+        content: '<-'
+        position: absolute
+        right: -30%
+
+    &:hover
+        color: $text-link-hover
+        &::after
+            color: $text-link-hover
+            right: -10%

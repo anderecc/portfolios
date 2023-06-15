@@ -1,0 +1,59 @@
+@import '../_mixins'
+@import '../_variables'
+
+.title
+    color: $text-white
+
+.links_container
+    margin: 1rem 0
+    ul
+        display: flex
+        gap: .5rem
+        flex-direction: column
+
+        li
+            align-items: center
+            justify-content: flex-start
+            display: flex
+            gap: .5rem
+            span
+                i
+                    color: $text-link-hover
+
+            a
+                color: $text-link
+                position: relative
+                padding: 5px 10px
+                @include transition
+                &::after
+                    @include transition
+                    content: '<-'
+                    font-family: 'Fira Code', monospace
+                    position: absolute
+                    transform: translateX(20px)
+                    color: $text-link
+            &:hover
+                span
+                    i
+                        color: #f0ce4e
+                a
+                    color: $text-link-hover
+                    &::after
+                        transform: translateX(5px)
+                        color: $text-link-hover
+
+.projects_container
+    ul
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        @include tablet
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+        @include desktop
+            display: flex
+            flex-direction: row
+            justify-content: space-evenly
+            flex-wrap: wrap
+            li
+                width: 28%
