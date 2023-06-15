@@ -18,10 +18,9 @@ const Home = () => {
                     Uma breve introdução sobre quem eu sou, em resumo, sou
                     apaixonado por tecnologia, apaixonado em resolver problemas
                     e criar soluções e na programação isso não falta. Tenho 21
-                    anos, sou desenvolvedor {'"Full Stack"'} e faz mais ou menos
-                    1 ano e meio que estudo programação, me dedicando
-                    diariamente para aprender algo novo e fixar os conhecimentos
-                    que já tenho.
+                    anos, sou desenvolvedor {'"Full Stack"'} e faz mais de 1 ano
+                    que estudo programação, me dedicando diariamente para
+                    aprender algo novo e fixar os conhecimentos que já tenho.
                 </p>
             </section>
             <section className={styles.skills_container}>
