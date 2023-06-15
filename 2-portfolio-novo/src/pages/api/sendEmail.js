@@ -9,7 +9,9 @@ export default async function sendEmail(req, res) {
     try {
         let transporter = await nodemailer.createTransport({
             host: 'smtp.umbler.com',
-            port: 587,
+            port: 2525,
+            secure: false,
+            requireTLS: true,
             auth: {
                 user: process.env.NEXT_PUBLIC_USER_MAIL,
                 pass: process.env.NEXT_PUBLIC_PASS_MAIL,
