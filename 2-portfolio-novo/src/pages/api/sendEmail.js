@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import nodemailer from 'nodemailer';
 
-export default function sendEmail(req, res) {
+export default async function sendEmail(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Método não suportado.' });
     }
@@ -15,19 +15,27 @@ export default function sendEmail(req, res) {
         },
     });
 
-    transporter
-        .sendMail({
-            from: `"${req.body.name}" <${process.env.NEXT_PUBLIC_USER_MAIL}>`, // sender address
-            to: process.env.NEXT_PUBLIC_USER_MAIL + ', andersondbl06@gmail.com', // list of receivers
-            replyTo: req.body.email,
-            subject: `Contato feito por '${req.body.name}' via Portfólio`, // Subject line
-            text: req.body.text, // plain text body
-            html: `<b>Nome de quem enviou: ${req.body.name}<br/> Email de quem enviou: ${req.body.email}</br><br/> Texto de quem enviou: ${req.body.text}`, // html body
-        })
-        .then((response) => {
-            res.status(200).send(response.data);
-        })
-        .catch((err) => {
-            res.status(400).send(err);
+    try {
+        await transporter
+            .sendMail({
+                from: `"${req.body.name}" <${process.env.NEXT_PUBLIC_USER_MAIL}>`, // sender address
+                to:
+                    process.env.NEXT_PUBLIC_USER_MAIL +
+                    ', andersondbl06@gmail.com', // list of receivers
+                replyTo: req.body.email,
+                subject: `Contato feito por '${req.body.name}' via Portfólio`, // Subject line
+                text: req.body.text, // plain text body
+                html: `<b>Nome de quem enviou: ${req.body.name}<br/> Email de quem enviou: ${req.body.email}</br><br/> Texto de quem enviou: ${req.body.text}`, // html body
+            })
+            .then((response) => {
+                res.status(200).send(response.data);
+            })
+            .catch((err) => {
+                res.status(400).send(err);
+            });
+    } catch (error) {
+        res.status(400).send({
+            error: 'Ocorreu algum erro ao tentar enviar sua mensagem.',
         });
+    }
 }
