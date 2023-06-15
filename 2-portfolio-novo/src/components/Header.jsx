@@ -9,7 +9,7 @@ const Header = (props) => {
     return (
         <header className={styles.container}>
             <div className={styles.fixed}>
-                <Letters word="Anderson" redirect nameClass="letter_header" />
+                <Letters word="Anderson" redirect nameClass="text_header" />
                 <ul>
                     <li>
                         <Link
