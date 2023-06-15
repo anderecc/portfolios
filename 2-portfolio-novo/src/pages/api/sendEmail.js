@@ -6,16 +6,16 @@ export default async function sendEmail(req, res) {
         return res.status(405).json({ error: 'Método não suportado.' });
     }
 
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.umbler.com',
-        port: 587,
-        auth: {
-            user: process.env.NEXT_PUBLIC_USER_MAIL,
-            pass: process.env.NEXT_PUBLIC_PASS_MAIL,
-        },
-    });
-
     try {
+        let transporter = await nodemailer.createTransport({
+            host: 'smtp.umbler.com',
+            port: 587,
+            auth: {
+                user: process.env.NEXT_PUBLIC_USER_MAIL,
+                pass: process.env.NEXT_PUBLIC_PASS_MAIL,
+            },
+        });
+
         await transporter
             .sendMail({
                 from: `"${req.body.name}" <${process.env.NEXT_PUBLIC_USER_MAIL}>`, // sender address
