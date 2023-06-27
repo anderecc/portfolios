@@ -273,6 +273,18 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                React e Redux, por Leonardo Moura Leitao. (
+                                <strong>54,5 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-0075e93e-db81-4423-8403-2ec34b56bcd6/    "
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 Next.js e React, por Leonardo Moura Leitao. (
                                 <strong>28,5 horas no total</strong>)
                             </p>
