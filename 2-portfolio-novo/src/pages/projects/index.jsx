@@ -87,10 +87,10 @@ const Projetos = () => {
                     </li>
                     <li>
                         <Card
-                            link="https://anderecc.github.io/projetos-javascript/34-sneaker-ecommerce/public/index.html"
-                            name="sneaker"
-                            img="principals/sneaker"
-                            techs="html sass javascript node"
+                            link="https://anderecc.github.io/projetos-javascript/37-dropbox/index.html"
+                            name="dropbox"
+                            img="principals/dropbox"
+                            techs="html css bootstrap javascript firebase"
                         />
                     </li>
                 </ul>

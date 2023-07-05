@@ -34,6 +34,13 @@ const projectsFullStack = [
         techs: 'html sass bootstrap javascript nextjs mongodb jwt',
         about: 'Projeto feito com referencia em cima de um curso que fiz, tentei fazer o projeto do zero com poucas ajudas do curso, me ajudou muito a aprender sobre backend e mongodb, nele podemos adicionar créditos e débitos, podemos editar os mesmo e temos o resumo dos valores gerados para cada entrada que adicionarmos.',
     },
+    {
+        name: 'dropbox',
+        image: 'fullstack/dropbox',
+        url: 'https://anderecc.github.io/projetos-javascript/37-dropbox/index.html',
+        techs: 'html css bootstrap javascript firebase',
+        about: 'Projeto feito com referencia em um curso de Javascript, peguei algumas bases e ajudas do curso mas tentei fazer por conta própria, projeto feito sem framework, somente Javascript, Firebase, Html e Css. Utilizado o Realtime database e o Storage do Firebase.',
+    },
 ];
 
 export default projectsFullStack;
