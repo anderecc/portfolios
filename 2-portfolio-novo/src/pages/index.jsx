@@ -273,12 +273,24 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                Javascript, por Hcode Treinamentos. (
+                                <strong>38,5 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-c201d74b-6ff0-4445-b433-ac9b4618883e/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 React e Redux, por Leonardo Moura Leitao. (
                                 <strong>54,5 horas no total</strong>)
                             </p>
                             <Link
                                 target="_blank"
-                                href="https://www.udemy.com/certificate/UC-0075e93e-db81-4423-8403-2ec34b56bcd6/    "
+                                href="https://www.udemy.com/certificate/UC-0075e93e-db81-4423-8403-2ec34b56bcd6/"
                             >
                                 Certificado
                             </Link>
