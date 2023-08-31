@@ -273,6 +273,19 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                Javascript Funcional e Reativo, por Leonardo
+                                Moura Leitao. (
+                                <strong>17 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-07b943da-4392-4fb1-8bbf-f7606a69a5c1/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 Javascript, por Hcode Treinamentos. (
                                 <strong>38,5 horas no total</strong>)
                             </p>
