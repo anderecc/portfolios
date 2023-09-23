@@ -273,6 +273,18 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                Node.js, por Guia do Programador. (
+                                <strong>50 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-06134f8b-38ce-435d-b387-f94540a1674f/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 Javascript Funcional e Reativo, por Leonardo
                                 Moura Leitao. (
                                 <strong>17 horas no total</strong>)
