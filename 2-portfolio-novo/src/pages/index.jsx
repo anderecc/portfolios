@@ -273,6 +273,18 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                MySQL 8, por Hcode Treinamentos. (
+                                <strong>8.5 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-77b591d7-5314-4e52-a240-7373ed80c9ae/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 Node.js, por Guia do Programador. (
                                 <strong>50 horas no total</strong>)
                             </p>
