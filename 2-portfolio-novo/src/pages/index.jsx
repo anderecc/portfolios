@@ -273,6 +273,18 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                LGPD, por Cláudio Dodt. (
+                                <strong>4 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-3175fa50-b084-4a40-a38f-f8768e410412/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 MySQL 8, por Hcode Treinamentos. (
                                 <strong>8.5 horas no total</strong>)
                             </p>
