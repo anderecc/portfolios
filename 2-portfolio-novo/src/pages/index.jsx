@@ -273,6 +273,18 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
+                                Git e Github, por Matheus Battisti. (
+                                <strong>8.5 horas no total</strong>)
+                            </p>
+                            <Link
+                                target="_blank"
+                                href="https://www.udemy.com/certificate/UC-d28bae80-353d-4a2d-9dea-63460d5d87f4/"
+                            >
+                                Certificado
+                            </Link>
+                        </li>
+                        <li>
+                            <p>
                                 LGPD, por Cláudio Dodt. (
                                 <strong>4 horas no total</strong>)
                             </p>
