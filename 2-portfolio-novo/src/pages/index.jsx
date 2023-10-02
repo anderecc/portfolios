@@ -273,7 +273,7 @@ const Home = () => {
                     <ul>
                         <li>
                             <p>
-                                Git e Github, por Matheus Battisti. (
+                                Git e GitHub, por Matheus Battisti. (
                                 <strong>8.5 horas no total</strong>)
                             </p>
                             <Link
